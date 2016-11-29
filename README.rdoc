@@ -1,5 +1,8 @@
 == README
 
+Fake Bank - User can register for a new account, login once registered and view and create transactions
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
