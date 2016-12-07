@@ -30,6 +30,7 @@ gem 'spring',        group: :development
 gem 'bcrypt', '~> 3.1.7'
 gem 'hirb'
 gem 'materialize-sass'
+gem 'rails-footnotes', '>= 4.0.0', '<5'
 # Use unicorn as the app server
 # gem 'unicorn'
 

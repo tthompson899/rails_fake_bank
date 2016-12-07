@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'users#index'
   get '/users/new' => 'users#new'
+  post '/users' => 'users#create'
 
   get '/sessions/new' => 'sessions#new'
 

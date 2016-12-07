@@ -4,14 +4,15 @@
 <h2 class="center"> Register Your Account</h2>
 
 <div class="row">
-  <form class="col s9" method="post">
-    <input type="text" name="acct_num" placeholder="Account Number">
-    <input type="text" name="first_name" placeholder="First Name">
-    <input type="text" name="last_name" placeholder="Last Name">
-    <input type="text" name="username" placeholder="Username">
-    <input type="text" name="email" placeholder="Email">
-    <input type="password" name="password" placeholder="Password">
-    <input type="password" name="confirm_password" placeholder="Confirm Password">
-    <input type="button" value="Submit" class="right">
+  <form class="col s9" action="/users" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="text" name="user[acct_num]" placeholder="Account Number">
+    <input type="text" name="user[first_name]" placeholder="First Name">
+    <input type="text" name="user[last_name]" placeholder="Last Name">
+    <input type="text" name="user[username]" placeholder="Username">
+    <input type="text" name="user[email]" placeholder="Email">
+    <input type="password" name="user[password]" placeholder="Password">
+    <input type="password" name="user[confirm_password]" placeholder="Confirm Password">
+    <input type="submit" value="Submit" class="right">
   </form>
 </div>
