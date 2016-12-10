@@ -2,9 +2,10 @@
 <p><a href="/">Home</a></p>
 <p><a href="/users/new">Don't have an account? Register here</a></p>
 <div class="row">
-  <form class="" action="index.html" method="post">
-    <input type="text" name="username" placeholder="Username">
-    <input type="text" name="password" placeholder="Password">
+  <form class="" action="/sessions" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="text" name="session[username]" placeholder="Username">
+    <input type="password" name="session[password]" placeholder="Password">
     <input type="submit" value="Submit">
   </form>
 </div>
