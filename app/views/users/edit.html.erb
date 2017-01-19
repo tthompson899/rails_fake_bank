@@ -4,16 +4,16 @@
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
   <label for="firstName">First Name</label>
-  <input type="text" name="first_name" value="<%= @user.first_name %>">
+  <input type="text" name="first_name" value="<%= @edit_user.first_name %>">
 
   <label for="lasttName">Last Name</label>
-  <input type="text" name="last_name" value="<%= @user.last_name %>">
+  <input type="text" name="last_name" value="<%= @edit_user.last_name %>">
 
   <label for="userName">User Name</label>
-  <input type="text" name="user_name" value="<%= @user.username %>">
+  <input type="text" name="user_name" value="<%= @edit_user.username %>">
 
   <label for="Email">Email</label>
-  <input type="email" name="email" value="<%= @user.email %>">
+  <input type="email" name="email" value="<%= @edit_user.email %>">
 
   <input type="submit" value="Update">
 
