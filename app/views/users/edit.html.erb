@@ -1,0 +1,20 @@
+<h1>Edit <%= @edit_user.first_name %></h1>
+<form class="col 6" action="/users/<%= @edit_user.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="firstName">First Name</label>
+  <input type="text" name="first_name" value="<%= @user.first_name %>">
+
+  <label for="lasttName">Last Name</label>
+  <input type="text" name="last_name" value="<%= @user.last_name %>">
+
+  <label for="userName">User Name</label>
+  <input type="text" name="user_name" value="<%= @user.username %>">
+
+  <label for="Email">Email</label>
+  <input type="email" name="email" value="<%= @user.email %>">
+
+  <input type="submit" value="Update">
+
+</form>
