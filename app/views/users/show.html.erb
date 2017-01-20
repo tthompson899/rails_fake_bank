@@ -1,5 +1,10 @@
 <h1>Welcome <%= @user.first_name %>!</h1>
 <p>
-  <a href="/sessions" data-method="delete">Log Off</a>
+  <form action="/sessions" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="hidden" name="_method" value="delete">
+    <!-- <a href="/sessions" data-method="delete">Log Off</a> -->
+    <input type="submit" value="Log Off">
+  </form>
   <a href="/users/<%= @user.id %>/edit">Update Profile</a>
 </p>
